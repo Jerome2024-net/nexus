@@ -378,43 +378,6 @@
             }
         }
 
-        /* Trust indicators */
-        .trust-indicators {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-            margin-top: 32px;
-            opacity: 0;
-            animation: trustFade 1.2s cubic-bezier(0.28, 0.11, 0.32, 1) 0.9s forwards;
-        }
-
-        @keyframes trustFade {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-        }
-
-        .trust-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-            color: var(--text-secondary);
-            letter-spacing: -0.01em;
-        }
-
-        .trust-icon {
-            width: 16px;
-            height: 16px;
-            color: var(--success-green);
-            font-weight: bold;
-        }
-
         /* Market stats section */
         .market-stats {
             display: flex;
@@ -1105,12 +1068,6 @@
                 font-size: 11px;
             }
 
-            .trust-indicators {
-                flex-direction: column;
-                gap: 16px;
-                align-items: center;
-            }
-
             nav {
                 padding: 12px 16px;
             }
@@ -1499,21 +1456,6 @@
                     <h1>NEXUS</h1>
                     <p class="subtitle">l'expertise immobilière de référence</p>
                     <p class="description">Notre équipe d'experts immobiliers vous accompagne dans tous vos projets</p>
-                    
-                    <div class="trust-indicators">
-                        <div class="trust-item">
-                            <span class="trust-icon" aria-hidden="true">✓</span>
-                            <span>Estimation tous biens gratuite</span>
-                        </div>
-                        <div class="trust-item">
-                            <span class="trust-icon" aria-hidden="true">✓</span>
-                            <span>Expertise multi-secteurs</span>
-                        </div>
-                        <div class="trust-item">
-                            <span class="trust-icon" aria-hidden="true">✓</span>
-                            <span>Sans engagement</span>
-                        </div>
-                    </div>
                 </div>
                 
                 <div class="form-container" id="formContainer">
@@ -1522,11 +1464,6 @@
                         <div class="form-header">
                             <h2>Estimation Immobilière Gratuite</h2>
                             <p>Parlez avec un expert sous 24h</p>
-                            
-                            <div class="value-proposition">
-                                <div class="highlight">🎯 Estimation précise tous biens confondus</div>
-                                <div class="subtitle">Résidentiel • Commercial • Industriel • Terrain • Investissement</div>
-                            </div>
                         </div>
                         
                         <div class="form-progress" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" aria-label="Progression du formulaire">
@@ -1823,7 +1760,6 @@
     <footer>
         <div class="footer-content">
             <p>© 2025 NEXUS. L'expertise immobilière tous biens confondus qui révèle la vraie valeur de votre patrimoine.</p>
-            <p style="margin-top: 8px; opacity: 0.7;">🏡 Résidentiel • 🏢 Commercial • 🏭 Industriel • 🌍 Terrain • 💰 Investissement</p>
         </div>
     </footer>
 
