@@ -1,13 +1,27 @@
-# 🚀 Guide de Déploiement GitHub Pages - NEXUS Realty
+# 🚀 Guide de Déploiement GitHub Pages + Namecheap
 
-## 📋 Étapes à suivre
+## ✅ **STATUT : Repository créé avec succès !**
+- **Repository** : https://github.com/Jerome2024-net/nexus
+- **Code pushé** : ✅ Terminé
+- **Prochaine étape** : Activer GitHub Pages et configurer DNS
 
-### 1. 🏗️ Créer le repository GitHub
+## 🎯 **Étapes suivantes**
 
-1. **Allez sur** [GitHub](https://github.com)
-2. **Cliquez** sur "New repository" (bouton vert)
-3. **Configurez** :
-   - **Repository name** : `nexus-realty` (ou `nexusrealty`)
+### **Étape 1 : Activer GitHub Pages**
+
+1. **Allez sur** : https://github.com/Jerome2024-net/nexus
+2. **Cliquez** sur **"Settings"** (onglet en haut)
+3. **Dans le menu gauche** : cliquez sur **"Pages"**
+4. **Source** : Sélectionnez **"Deploy from a branch"**
+5. **Branch** : Sélectionnez **"main"**
+6. **Folder** : Laissez **"/ (root)"**
+7. **Cliquez** sur **"Save"**
+
+### **Étape 2 : Configurer le domaine personnalisé**
+1. **Dans la même page** "Pages"
+2. **Custom domain** : Tapez `nexusrealty.org`
+3. **Cliquez** sur **"Save"**
+4. **Attendez** que le fichier CNAME soit créé automatiquement
    - **Description** : `Landing page professionnelle NEXUS - L'expertise immobilière de référence`
    - **Public** ✅ (requis pour GitHub Pages gratuit)
    - **Add README** ❌ (on en a déjà un)
