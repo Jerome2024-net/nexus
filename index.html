@@ -1462,8 +1462,8 @@
                     <!-- Form Content -->
                     <div id="formContent">
                         <div class="form-header">
-                            <h2>Estimation Gratuite & Confidentielle</h2>
-                            <p>Votre expert vous appelle sous 24h</p>
+                            <h2>Estimer pour Vendre</h2>
+                            <p>Obtenez la juste valeur de votre bien à vendre</p>
                         </div>
                         
                         <div class="form-progress" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" aria-label="Progression du formulaire">
@@ -1586,6 +1586,20 @@
                                 </div>
                                 
                                 <div class="form-group">
+                                    <label for="saleTimeline">Dans quel délai souhaitez-vous vendre ? *</label>
+                                    <select id="saleTimeline" name="saleTimeline" required aria-describedby="saleTimeline-error">
+                                        <option value="">Sélectionnez votre échéance</option>
+                                        <option value="urgent">🔥 Urgent (1-3 mois)</option>
+                                        <option value="court-terme">📅 Court terme (3-6 mois)</option>
+                                        <option value="moyen-terme">⏰ Moyen terme (6-12 mois)</option>
+                                        <option value="long-terme">📆 Long terme (1-2 ans)</option>
+                                        <option value="pas-decide">🤔 Pas encore décidé</option>
+                                        <option value="juste-evaluation">📊 Juste une évaluation</option>
+                                    </select>
+                                    <div class="field-error" id="saleTimeline-error" role="alert"></div>
+                                </div>
+                                
+                                <div class="form-group">
                                     <label for="rooms">Configuration du bien</label>
                                     <select id="rooms" name="rooms" aria-describedby="rooms-error">
                                         <option value="">Sélectionnez (si applicable)</option>
@@ -1637,41 +1651,29 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="sellingReason">Pourquoi souhaitez-vous une estimation ? *</label>
+                                    <label for="sellingReason">Principale motivation de vente ? *</label>
                                     <select id="sellingReason" name="sellingReason" required aria-describedby="sellingReason-error">
                                         <option value="">Sélectionnez votre situation</option>
-                                        <optgroup label="🔥 Projets de cession">
-                                            <option value="vente-immediate">Projet de vente immédiat</option>
-                                            <option value="vente-6mois">Cession dans les 6 mois</option>
-                                            <option value="vente-1an">Cession dans l'année</option>
-                                            <option value="cession-activite">Cession d'activité</option>
-                                            <option value="cession-fonds">Cession de fonds de commerce</option>
+                                        <optgroup label="🏠 Projets personnels">
+                                            <option value="demenagement">Déménagement</option>
+                                            <option value="agrandissement">Besoin d'agrandir</option>
+                                            <option value="rapprochement">Rapprochement travail/famille</option>
+                                            <option value="retraite">Projet retraite</option>
+                                            <option value="investissement">Autre investissement</option>
+                                        </optgroup>
+                                        <optgroup label="💼 Situations financières">
+                                            <option value="liquidites">Besoin de liquidités</option>
+                                            <option value="optimisation">Optimisation fiscale</option>
+                                            <option value="simplification">Simplification patrimoine</option>
                                         </optgroup>
                                         <optgroup label="🏛️ Situations particulières">
                                             <option value="succession">Succession / Héritage</option>
                                             <option value="divorce">Séparation / Divorce</option>
-                                            <option value="liquidation">Liquidation société</option>
-                                            <option value="expropriation">Expropriation</option>
-                                            <option value="saisie">Procédure judiciaire</option>
+                                            <option value="professionnel">Changement professionnel</option>
                                         </optgroup>
-                                        <optgroup label="💼 Gestion patrimoniale">
-                                            <option value="optimisation-fiscale">Optimisation fiscale</option>
-                                            <option value="restructuration">Restructuration patrimoine</option>
-                                            <option value="reinvestissement">Projet de réinvestissement</option>
-                                            <option value="arbitrage">Arbitrage immobilier</option>
-                                        </optgroup>
-                                        <optgroup label="📊 Évaluation & Suivi">
-                                            <option value="curiosite">Suivi valeur patrimoine</option>
-                                            <option value="assurance">Révision assurance</option>
-                                            <option value="emprunt">Garantie emprunt</option>
-                                            <option value="donation">Préparation donation</option>
-                                            <option value="ifi">Déclaration IFI</option>
-                                        </optgroup>
-                                        <optgroup label="🏗️ Projets d'aménagement">
-                                            <option value="changement-destination">Changement destination</option>
-                                            <option value="division">Division parcellaire</option>
-                                            <option value="renovation">Projet rénovation</option>
-                                            <option value="extension">Projet extension</option>
+                                        <optgroup label="📈 Opportunité marché">
+                                            <option value="prix-avantageux">Prix du marché avantageux</option>
+                                            <option value="plus-value">Réaliser une plus-value</option>
                                         </optgroup>
                                         <option value="autre">Autre raison</option>
                                     </select>
@@ -1679,14 +1681,14 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="estimatedValue">Votre estimation personnelle (optionnel)</label>
-                                    <input type="number" id="estimatedValue" name="estimatedValue" aria-describedby="estimatedValue-error" placeholder="Combien pensez-vous que votre bien vaut en XOF ?" min="1000000" max="2000000000">
+                                    <label for="estimatedValue">À combien espérez-vous vendre ? (optionnel)</label>
+                                    <input type="number" id="estimatedValue" name="estimatedValue" aria-describedby="estimatedValue-error" placeholder="Votre prix de vente espéré en XOF" min="1000000" max="2000000000">
                                     <div class="field-error" id="estimatedValue-error" role="alert"></div>
                                 </div>
                                 
                                 <div class="form-group">
                                     <label for="additionalInfo">Informations complémentaires</label>
-                                    <textarea id="additionalInfo" name="additionalInfo" placeholder="Spécificités du bien : parking, équipements, situation, contraintes, potentiel, travaux réalisés, environnement..." aria-describedby="additionalInfo-error"></textarea>
+                                    <textarea id="additionalInfo" name="additionalInfo" placeholder="Atouts de votre bien : garage, jardin, rénovations récentes, vue, proximités, contraintes particulières..." aria-describedby="additionalInfo-error"></textarea>
                                     <div class="field-error" id="additionalInfo-error" role="alert"></div>
                                 </div>
                                 
@@ -1704,7 +1706,7 @@
                                 
                                 <div class="form-nav">
                                     <button type="button" class="btn-prev" onclick="prevStep()">Précédent</button>
-                                    <button type="submit" class="btn-submit">🏡 Obtenir mon estimation gratuite</button>
+                                    <button type="submit" class="btn-submit">💰 Obtenir mon prix de vente</button>
                                 </div>
                             </div>
                         </form>
@@ -1713,8 +1715,8 @@
                     <!-- Success Content (hidden initially) -->
                     <div class="success-container" id="successContainer" role="alert" aria-live="polite">
                         <div class="success-icon" aria-hidden="true">📊</div>
-                        <h3>💰 Votre estimation arrive !</h3>
-                        <p class="success-message">Parfait ! Votre demande a été transmise à notre expert local. Vous découvrirez bientôt la vraie valeur de votre bien et son potentiel sur le marché actuel.</p>
+                        <h3>💰 Votre prix de vente arrive !</h3>
+                        <p class="success-message">Parfait ! Votre demande a été transmise à notre expert local. Vous découvrirez bientôt le prix optimal pour vendre votre bien rapidement.</p>
                         
                         <div class="success-steps">
                             <h4>🎯 Voici ce qui va se passer :</h4>
@@ -1768,9 +1770,9 @@
         <button class="success-toast-close" onclick="closeSuccessToast()" aria-label="Fermer la notification">×</button>
         <div class="success-toast-header">
             <div class="success-toast-icon">📊</div>
-            <h4 class="success-toast-title">Votre estimation arrive !</h4>
+            <h4 class="success-toast-title">Votre prix de vente arrive !</h4>
         </div>
-        <p class="success-toast-message">Notre expert va vous contacter sous 24h avec la valeur de votre bien.</p>
+        <p class="success-toast-message">Notre expert va vous contacter sous 24h avec le prix optimal pour votre vente.</p>
     </div>
 
     <script>
