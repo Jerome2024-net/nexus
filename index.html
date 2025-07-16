@@ -1451,8 +1451,8 @@
                     <!-- Form Content -->
                     <div id="formContent">
                         <div class="form-header">
-                            <h2>Estimer pour Vendre</h2>
-                            <p>Obtenez la juste valeur de votre bien à vendre</p>
+                            <h2>Projet Immobilier</h2>
+                            <p>Optimisez votre patrimoine immobilier avec NEXUS</p>
                         </div>
                         
                         <div class="form-progress" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" aria-label="Progression du formulaire">
@@ -1575,15 +1575,39 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="saleTimeline">Dans quel délai souhaitez-vous vendre ? *</label>
+                                    <label for="saleTimeline">Quel est votre projet immobilier ? *</label>
                                     <select id="saleTimeline" name="saleTimeline" required aria-describedby="saleTimeline-error">
-                                        <option value="">Sélectionnez votre échéance</option>
-                                        <option value="urgent">🔥 Urgent (1-3 mois)</option>
-                                        <option value="court-terme">📅 Court terme (3-6 mois)</option>
-                                        <option value="moyen-terme">⏰ Moyen terme (6-12 mois)</option>
-                                        <option value="long-terme">📆 Long terme (1-2 ans)</option>
-                                        <option value="pas-decide">🤔 Pas encore décidé</option>
-                                        <option value="juste-evaluation">📊 Juste une évaluation</option>
+                                        <option value="">Sélectionnez votre projet</option>
+                                        <optgroup label="🏠 Projets de Vente">
+                                            <option value="vente-urgente">🔥 Vente urgente (1-3 mois)</option>
+                                            <option value="vente-court-terme">📅 Vente court terme (3-6 mois)</option>
+                                            <option value="vente-moyen-terme">⏰ Vente moyen terme (6-12 mois)</option>
+                                            <option value="vente-long-terme">📆 Vente long terme (1-2 ans)</option>
+                                            <option value="evaluation-vente">📊 Juste une évaluation pour vendre</option>
+                                        </optgroup>
+                                        <optgroup label="🏢 Projets Locatifs">
+                                            <option value="mise-en-location">🏠 Mettre en location</option>
+                                            <option value="gestion-locative">🔑 Déléguer la gestion locative</option>
+                                            <option value="optimiser-loyers">💰 Optimiser mes revenus locatifs</option>
+                                            <option value="evaluation-locative">📋 Évaluation pour location</option>
+                                        </optgroup>
+                                        <optgroup label="🔧 Projets d'Amélioration">
+                                            <option value="renovation-valorisation">🔨 Rénover pour valoriser</option>
+                                            <option value="audit-energetique">⚡ Audit énergétique</option>
+                                            <option value="travaux-locatifs">🏗️ Travaux pour mise en location</option>
+                                        </optgroup>
+                                        <optgroup label="💼 Gestion Patrimoniale">
+                                            <option value="optimisation-fiscale">📊 Optimisation fiscale</option>
+                                            <option value="conseil-patrimoine">💎 Conseil patrimonial</option>
+                                            <option value="refinancement">🏦 Renégociation de crédit</option>
+                                            <option value="succession-heritage">🏛️ Gestion succession/héritage</option>
+                                        </optgroup>
+                                        <optgroup label="📈 Projets d'Investissement">
+                                            <option value="recherche-investissement">🎯 Recherche d'investissement</option>
+                                            <option value="diversification">🔄 Diversification patrimoine</option>
+                                            <option value="conseil-achat">🤝 Accompagnement achat</option>
+                                        </optgroup>
+                                        <option value="autre-projet">❓ Autre projet immobilier</option>
                                     </select>
                                     <div class="field-error" id="saleTimeline-error" role="alert"></div>
                                 </div>
@@ -1670,46 +1694,8 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="additionalServices">Quels autres services pourraient vous intéresser ? (optionnel)</label>
-                                    <select id="additionalServices" name="additionalServices" aria-describedby="additionalServices-error">
-                                        <option value="">Sélectionnez si vous souhaitez en savoir plus</option>
-                                        <optgroup label="💰 Gestion & Location">
-                                            <option value="mise-en-location">Mise en location de biens</option>
-                                            <option value="gestion-locative">Gestion locative complète</option>
-                                            <option value="optimisation-fiscale">Optimisation fiscale & conseils</option>
-                                            <option value="renovation-rentable">Rénovation pour plus-value</option>
-                                        </optgroup>
-                                        <optgroup label="🔧 Valorisation & Travaux">
-                                            <option value="audit-energetique">Audit énergétique (DPE)</option>
-                                            <option value="home-staging">Home staging & mise en valeur</option>
-                                            <option value="travaux-renovation">Travaux de rénovation</option>
-                                            <option value="expertise-juridique">Expertise juridique & diagnostics</option>
-                                        </optgroup>
-                                        <optgroup label="📊 Conseil Patrimonial">
-                                            <option value="strategie-patrimoine">Stratégie patrimoniale globale</option>
-                                            <option value="investissement-locatif">Recherche investissement locatif</option>
-                                            <option value="refinancement">Renégociation de crédits</option>
-                                            <option value="assurance-patrimoine">Assurance & protection patrimoine</option>
-                                        </optgroup>
-                                        <optgroup label="🏢 Services Premium">
-                                            <option value="estimation-reguliere">Suivi valeur patrimoine (abonnement)</option>
-                                            <option value="veille-marche">Veille marché & opportunités</option>
-                                            <option value="accompagnement-achat">Accompagnement achat nouveaux biens</option>
-                                            <option value="conciergerie">Conciergerie immobilière</option>
-                                        </optgroup>
-                                        <optgroup label="🤝 Situations Spéciales">
-                                            <option value="accompagnement-succession">Gestion succession immobilière</option>
-                                            <option value="formation-investissement">Formation investissement immobilier</option>
-                                            <option value="recherche-biens">Sourcing de biens sur-mesure</option>
-                                        </optgroup>
-                                        <option value="aucun-autre">Juste la vente pour le moment</option>
-                                    </select>
-                                    <div class="field-error" id="additionalServices-error" role="alert"></div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="estimatedValue">À combien espérez-vous vendre ? (optionnel)</label>
-                                    <input type="number" id="estimatedValue" name="estimatedValue" aria-describedby="estimatedValue-error" placeholder="Votre prix de vente espéré en XOF" min="1000000" max="2000000000">
+                                    <label for="estimatedValue">Budget/Prix espéré ? (optionnel)</label>
+                                    <input type="number" id="estimatedValue" name="estimatedValue" aria-describedby="estimatedValue-error" placeholder="Si vente: prix espéré / Si achat: budget / Si location: loyer visé (en XOF)" min="50000" max="2000000000">
                                     <div class="field-error" id="estimatedValue-error" role="alert"></div>
                                 </div>
                                 
@@ -1733,7 +1719,7 @@
                                 
                                 <div class="form-nav">
                                     <button type="button" class="btn-prev" onclick="prevStep()">Précédent</button>
-                                    <button type="submit" class="btn-submit">🏠 Vendre avec nous</button>
+                                    <button type="submit" class="btn-submit">🤝 Lancer mon projet</button>
                                 </div>
                             </div>
                         </form>
