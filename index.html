@@ -1427,17 +1427,6 @@
     </style>
 </head>
 <body>
-
-
-
-
-
-
-
-
-    </style>
-</head>
-<body>
     <div class="bg-quartz" aria-hidden="true"></div>
     <div class="bg-dots" aria-hidden="true"></div>
     <div class="bg-overlay" aria-hidden="true"></div>
@@ -1678,6 +1667,44 @@
                                         <option value="autre">Autre raison</option>
                                     </select>
                                     <div class="field-error" id="sellingReason-error" role="alert"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="additionalServices">Quels autres services pourraient vous intéresser ? (optionnel)</label>
+                                    <select id="additionalServices" name="additionalServices" aria-describedby="additionalServices-error">
+                                        <option value="">Sélectionnez si vous souhaitez en savoir plus</option>
+                                        <optgroup label="💰 Gestion & Location">
+                                            <option value="mise-en-location">Mise en location de biens</option>
+                                            <option value="gestion-locative">Gestion locative complète</option>
+                                            <option value="optimisation-fiscale">Optimisation fiscale & conseils</option>
+                                            <option value="renovation-rentable">Rénovation pour plus-value</option>
+                                        </optgroup>
+                                        <optgroup label="🔧 Valorisation & Travaux">
+                                            <option value="audit-energetique">Audit énergétique (DPE)</option>
+                                            <option value="home-staging">Home staging & mise en valeur</option>
+                                            <option value="travaux-renovation">Travaux de rénovation</option>
+                                            <option value="expertise-juridique">Expertise juridique & diagnostics</option>
+                                        </optgroup>
+                                        <optgroup label="📊 Conseil Patrimonial">
+                                            <option value="strategie-patrimoine">Stratégie patrimoniale globale</option>
+                                            <option value="investissement-locatif">Recherche investissement locatif</option>
+                                            <option value="refinancement">Renégociation de crédits</option>
+                                            <option value="assurance-patrimoine">Assurance & protection patrimoine</option>
+                                        </optgroup>
+                                        <optgroup label="🏢 Services Premium">
+                                            <option value="estimation-reguliere">Suivi valeur patrimoine (abonnement)</option>
+                                            <option value="veille-marche">Veille marché & opportunités</option>
+                                            <option value="accompagnement-achat">Accompagnement achat nouveaux biens</option>
+                                            <option value="conciergerie">Conciergerie immobilière</option>
+                                        </optgroup>
+                                        <optgroup label="🤝 Situations Spéciales">
+                                            <option value="accompagnement-succession">Gestion succession immobilière</option>
+                                            <option value="formation-investissement">Formation investissement immobilier</option>
+                                            <option value="recherche-biens">Sourcing de biens sur-mesure</option>
+                                        </optgroup>
+                                        <option value="aucun-autre">Juste la vente pour le moment</option>
+                                    </select>
+                                    <div class="field-error" id="additionalServices-error" role="alert"></div>
                                 </div>
                                 
                                 <div class="form-group">
